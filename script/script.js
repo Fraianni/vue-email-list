@@ -19,7 +19,6 @@ const app = new Vue({
                     .then((response) => {
                         if (response.status === 200) {
                             const randomMail = response.data.response;
-                            //  this.numbers = [randomNumber];
                             this.eMail.push(randomMail);
                         }
                     });
